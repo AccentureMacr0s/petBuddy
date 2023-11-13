@@ -2,12 +2,14 @@ const antwerp = require("./antwerp");
 const chicago = require("./chicago");
 const toronto = require("./toronto");
 const san_francisco = require("./san_francisco");
+const riga = require("./riga");
 
 module.exports.mocks = {
   "51.219448,4.402464": antwerp,
   "43.653225,-79.383186": toronto,
   "41.878113,-87.629799": chicago,
   "37.7749295,-122.4194155": san_francisco,
+  "56.946285,24.105078": riga, 
 };
 
 const mockImages = [
@@ -20,9 +22,8 @@ const mockImages = [
   "https://www.foodiesfeed.com/wp-content/uploads/2019/02/pizza-ready-for-baking-600x400.jpg",
 ];
 
-module.exports.addMockImage = (restaurant) => {
-  const randomImage =
-    mockImages[Math.ceil(Math.random() * (mockImages.length - 1))];
-  restaurant.photos = [randomImage];
-  return restaurant;
+module.exports.addMockImage = (item) => { // Generalized for any item
+  const randomImage = mockImages[Math.ceil(Math.random() * (mockImages.length - 1))];
+  item.photos = [randomImage];
+  return item;
 };
