@@ -27,7 +27,7 @@ module.exports.locations = {
         geometry: {
           location: {
             lat: 56.9261087,
-            lng: 24.1893229
+            lng: 24.1893229,
           },
           viewport: {
             northeast: {

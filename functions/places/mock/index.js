@@ -9,7 +9,8 @@ module.exports.mocks = {
   "43.653225,-79.383186": toronto,
   "41.878113,-87.629799": chicago,
   "37.7749295,-122.4194155": san_francisco,
-  "56.946285,24.105078": riga, 
+  "56.9261087,24.1893229": riga, 
+  
 };
 
 const mockImages = [
